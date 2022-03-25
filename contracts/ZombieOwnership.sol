@@ -3,6 +3,9 @@ pragma solidity ^0.4.25;
 import "./zombieattack.sol";
 import "./erc721.sol";
 
+/// @title Un contrato que gestiona la transferencia de la propiedad de un zombi
+/// @author lucasgday
+/// @dev compatible con ERC721 de OpenZeppelin
 contract ZombieOwnership is ZombieBattle, ERC721 {
 
     mapping (uint => address) zombieApprovals;
